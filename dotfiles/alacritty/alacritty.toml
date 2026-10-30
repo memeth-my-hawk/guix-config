@@ -1,0 +1,58 @@
+[window]
+padding = { x = 6, y = 6 }
+# Removes Alacritty's internal window title bar, letting Qtile handle borders
+decorations = "None"
+# Start slightly opaque if you ever want to add a compositor later
+opacity = 1.0 
+
+[font]
+# Make sure this matches the exact family name we found with fc-match
+normal = { family = "Source Code Pro", style = "Regular" }
+bold = { family = "Source Code Pro", style = "Bold" }
+italic = { family = "Source Code Pro", style = "Italic" }
+size = 7.0
+
+# Slightly increase line spacing for better code readability
+[font.offset]
+x = 0
+y = 1
+
+# --- Solarized Light Theme ---
+[colors.primary]
+background = "#fdf6e3" # Creamy base
+foreground = "#657b83" # Base00 (main text)
+
+[colors.cursor]
+text = "#fdf6e3"       # Background color for text under the cursor
+cursor = "#586e75"     # Base01 (darker shade for cursor)
+
+[colors.selection]
+text = "#fdf6e3"
+background = "#93a1a1" # Base1
+
+[colors.normal]
+black   = "#073642"
+red     = "#dc322f"
+green   = "#859900"
+yellow  = "#b58900"
+blue    = "#268bd2"
+magenta = "#d33682"
+cyan    = "#2aa198"
+white   = "#eee8d5"
+
+[colors.bright]
+black   = "#002b36"
+red     = "#cb4b16"    # Orange accent
+green   = "#586e75"
+yellow  = "#657b83"
+blue    = "#839496"
+magenta = "#6c71c4"
+cyan    = "#93a1a1"
+white   = "#fdf6e3"
+
+[keyboard]
+# Allow standard terminal shortcuts like Ctrl+Shift+C/V for clipboard
+bindings = [
+    { key = "C", mods = "Control|Shift", action = "Copy" },
+    { key = "V", mods = "Control|Shift", action = "Paste" },
+]

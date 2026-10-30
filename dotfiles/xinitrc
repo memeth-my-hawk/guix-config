@@ -1,0 +1,7 @@
+#!/bin/sh
+GUIX_PROFILE="$HOME/.guix-home/profile"
+if [ -f "$GUIX_PROFILE/etc/profile" ]; then
+  . "$GUIX_PROFILE/etc/profile"
+fi
+
+exec dbus-launch --exit-with-session qtile start
